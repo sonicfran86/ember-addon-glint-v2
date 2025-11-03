@@ -5,7 +5,7 @@ import { MyComponent } from 'sample-addon-v2-test/components/my-component';
   {{pageTitle "Dummy"}}
 
   <h2 id="title">Welcome to Ember</h2>
-  <MyComponent />
+  <MyComponent @name="Fran" />
 
   {{outlet}}
 </template>

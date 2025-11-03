@@ -1,14 +1,20 @@
-import type { TOC } from '@ember/component/template-only';
+import Component from '@glimmer/component';
 
 export interface MyComponentSignature {
-  Args: unknown;
+  Args: {
+    name: string;
+  };
   Blocks: {
     default: [];
   };
   Element: HTMLDivElement;
 }
 
-const MyComponent = <template>
-  <div>hi</div>
-</template> satisfies TOC<MyComponentSignature>;
+class MyComponent extends Component<MyComponentSignature> {
+  hello = 'hi';
+  <template>
+    <div>{{this.hello}} {{@name}}!</div>
+  </template>
+}
+
 export { MyComponent };
