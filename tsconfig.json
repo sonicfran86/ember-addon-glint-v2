@@ -17,6 +17,6 @@
       "sample-addon-v2-test/test-support/*": ["addon-test-support/*"],
       "*": ["types/*"]
     },
-    "types": ["ember-source/types"]
+    "types": ["ember-source/types", "@glint/ember-tsc/types"]
   }
 }

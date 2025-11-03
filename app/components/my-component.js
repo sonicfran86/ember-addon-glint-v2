@@ -1,0 +1,1 @@
+export { default } from 'sample-addon-v2-test/components/my-component';
